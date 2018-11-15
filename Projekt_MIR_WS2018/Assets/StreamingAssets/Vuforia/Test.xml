@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="Wolke19999" size="0.050000 0.027119" />
     <ImageTarget name="IMG_20181112_102646_bearb" size="0.050000 0.066667" />
     <ImageTarget name="Plug" size="0.050000 0.050075" />
     <ImageTarget name="Wolke7" size="0.050000 0.028092" />

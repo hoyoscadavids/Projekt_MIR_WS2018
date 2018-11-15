@@ -16,8 +16,8 @@ MonoBehaviour:
     ufoLicenseKey: QVorbkd4UC8vLy8vQUFBQUtQam9GcVJFNmtwNmtSQkw5Tnd0YTZFTGU5TnFwRm5ZYWlRb3ZydlNXbkNFaW5BSlNlaXR0THl5cnpzK3dQMjJOU0xwTkpDV2xMbUFUUUtQaEp2WHBZbjFLMHpqQ2x2a0pFV2h4WHFMWkdEc1BjeUo4L003NXQ3VklvazZKSHZiSTB6TnpoWGtzMEM3WndFbmZYTFdCODJJcTZsMk51TmRHai94NXpmeGVGVlJxLzZ0WWE4c3dQR2hEM0lWRlg5cUY4eENOZk1obHJOeURCZjNOUzR6V1lMNTZya2VUVE5WdnJwbWh5UE54Ky9QVEV0VFJHb3NrQ0FFdWxzS3BsekFmYUJSdTFyWm5WeTdIbmdhZThSL1ZMOGoxcXFCSmhvcjQ0cmJKMklmNEtRSzFlRnhjMldhWS9oYytkTU9PZk9IbDVuZElQOHo4dXhJVjEyNDhOVGhyNHJaV2ttbXE0aWRlKzl5V1Q5NTVMaW8=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 2
-    maxSimultaneousObjectTargets: 2
+    maxSimultaneousImageTargets: 5
+    maxSimultaneousObjectTargets: 5
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   digitalEyewear:
     cameraOffset: 0.06
     distortionRenderingLayer: 31
-    eyewearType: 0
+    eyewearType: 2
     stereoFramework: 0
     seeThroughConfiguration: 0
     viewerName: Generic Cardboard
@@ -54,7 +54,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
     trackingMode: 1
-    posePrediction: 0
+    posePrediction: 1
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}

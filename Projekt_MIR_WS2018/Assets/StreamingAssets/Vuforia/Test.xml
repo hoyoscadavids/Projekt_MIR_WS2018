@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="IMG_20181112_102646_bearb" size="0.050000 0.066667" />
+    <ImageTarget name="Plug" size="0.050000 0.050075" />
+    <ImageTarget name="Wolke7" size="0.050000 0.028092" />
+    <ImageTarget name="BalloonTest" size="0.070000 0.114650" />
+    <ImageTarget name="MarkerTest_Strand" size="0.407000 0.328054" />
+    <ImageTarget name="MarkerTest" size="0.333000 0.439378" />
+  </Tracking>
+</QCARConfig>

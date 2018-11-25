@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: f251f7ba018af6748ad3eff3b4d59527
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Person_seitlich_0
+    21300002: Person_seitlich_1
+    21300004: Person_seitlich_2
+    21300006: Person_seitlich_3
+    21300008: Person_seitlich_4
+    21300010: Person_seitlich_5
+    21300012: Person_seitlich_6
+    21300014: Person_seitlich_7
+    21300016: Person_seitlich_8
+    21300018: Person_seitlich_9
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Person_seitlich_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1627.6368
+        width: 146.77032
+        height: 425.203
+      alignment: 9
+      pivot: {x: 0.47693565, y: 0.49943948}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a526b68443cea7409a2234186bd6836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_1
+      rect:
+        serializedVersion: 2
+        x: 293.83334
+        y: 1366.8198
+        width: 300.01608
+        height: 769.1802
+      alignment: 9
+      pivot: {x: 0.60219, y: 0.5033675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8efefc6752382445b53501f9e04eda6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_2
+      rect:
+        serializedVersion: 2
+        x: 788.27985
+        y: 1499.0377
+        width: 377.21466
+        height: 603.5941
+      alignment: 9
+      pivot: {x: 0.49897358, y: 0.49861696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d3203caad93034288a8be73b295e65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_3
+      rect:
+        serializedVersion: 2
+        x: 1311.4364
+        y: 1913.2911
+        width: 69.46362
+        height: 31.907715
+      alignment: 9
+      pivot: {x: 0.49038213, y: 0.5079958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247a1f612e8d24c4c95fff6d7f57fbf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_4
+      rect:
+        serializedVersion: 2
+        x: 1347.2505
+        y: 1765.9093
+        width: 76.74951
+        height: 53.815308
+      alignment: 9
+      pivot: {x: 0.5374579, y: 0.7821347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1dbe4fda6960244b4ab3c8d5359a89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_5
+      rect:
+        serializedVersion: 2
+        x: 24.715017
+        y: 1299.9581
+        width: 81.982414
+        height: 287.49744
+      alignment: 9
+      pivot: {x: 0.50358343, y: 0.50101966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7e131f75136884c8c749153f0f2d98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_6
+      rect:
+        serializedVersion: 2
+        x: 16.360466
+        y: 1076.906
+        width: 127.88424
+        height: 191.52087
+      alignment: 9
+      pivot: {x: 0.4937241, y: 0.49913096}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9aa1f12a69c4f74b8fbad3a1dcad861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_7
+      rect:
+        serializedVersion: 2
+        x: 370.0908
+        y: 856.9541
+        width: 123.711365
+        height: 435.63513
+      alignment: 9
+      pivot: {x: 0.49639124, y: 0.4993764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e310b04989c4f5c43b72a793b7b2bf54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_8
+      rect:
+        serializedVersion: 2
+        x: 356.17435
+        y: 300.29315
+        width: 157.09451
+        height: 551.43286
+      alignment: 9
+      pivot: {x: 0.4954064, y: 0.49816915}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6362632a04f6b97478d2f67b10c9b6fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Person_seitlich_9
+      rect:
+        serializedVersion: 2
+        x: 350.3443
+        y: 0
+        width: 320.88055
+        height: 205.11986
+      alignment: 9
+      pivot: {x: 0.49755493, y: 0.67521507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f5682d78035394da0755aec0c1a7c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e482126559063ed4bb773737384368b1
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636787515830583036
+  assetBundleName: 
+  assetBundleVariant: 

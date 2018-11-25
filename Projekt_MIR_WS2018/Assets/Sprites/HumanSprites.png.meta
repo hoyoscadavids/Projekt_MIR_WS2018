@@ -266,10 +266,10 @@ TextureImporter:
       name: cheek1
       rect:
         serializedVersion: 2
-        x: 558
-        y: 1462
-        width: 32
-        height: 22
+        x: 556
+        y: 1460
+        width: 36
+        height: 26
       alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,12 +666,12 @@ TextureImporter:
       name: Nose
       rect:
         serializedVersion: 2
-        x: 601
-        y: 1428
-        width: 40
-        height: 42
+        x: 608
+        y: 1449
+        width: 31
+        height: 18
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.41935483, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -693,6 +693,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 636786885735422419
+  userData: 636787476190785414
   assetBundleName: 
   assetBundleVariant: 

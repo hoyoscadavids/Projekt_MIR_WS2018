@@ -1,9 +1,9 @@
-﻿    using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Island_Animation_Script : MonoBehaviour {
-    private Animator islandAnimator;
+    private Animator islandAnimator, outerFrameAnimator;
     private bool noWater;
     private bool isCloud;
     private Collider2D constraints;
@@ -15,6 +15,7 @@ public class Island_Animation_Script : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
         islandAnimator = GameObject.Find("Island").GetComponent<Animator>();
+        outerFrameAnimator = GameObject.Find("Outer_Frame_Water").GetComponent<Animator>();
         constraints = this.GetComponent<BoxCollider2D>();
         waterParticlesOutCounter = 0;
         maxNumberOfWaterParticles = 150;
@@ -42,6 +43,7 @@ public class Island_Animation_Script : MonoBehaviour {
             {
                // dyingIslandAnimationTriggered = true;
                 islandAnimator.SetBool("noWater", true);
+                outerFrameAnimator.SetBool("isWater", true);
             }
         }
         if (other.gameObject.CompareTag("Cloud"))
@@ -49,11 +51,9 @@ public class Island_Animation_Script : MonoBehaviour {
             islandAnimator.SetBool("isCloud", false);
         }
     }
-    private void OnTriggerEnter2D(Collider2D other) {
-        
+    private void OnTriggerEnter2D(Collider2D other) {     
         if (other.gameObject.CompareTag("Cloud"))
         {
-            Debug.Log("Water is being inserted");
             islandAnimator.SetBool("isCloud", true);
         }
     }

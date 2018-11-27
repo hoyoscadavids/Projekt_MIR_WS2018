@@ -8,6 +8,8 @@ TagManager:
   - Cloud
   - MountainHole
   - Plug
+  - Island
+  - Mountains
   layers:
   - Default
   - TransparentFX

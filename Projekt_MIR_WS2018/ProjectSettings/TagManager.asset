@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Water
   - Cloud
+  - MountainHole
+  - Plug
+  - Island
+  - Mountains
   layers:
   - Default
   - TransparentFX

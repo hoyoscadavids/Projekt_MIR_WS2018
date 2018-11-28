@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 212750265232929252}
   - component: {fileID: 95425776097608266}
   m_Layer: 0
-  m_Name: Outer_Frame_Water 1
+  m_Name: Outer_Frame_Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

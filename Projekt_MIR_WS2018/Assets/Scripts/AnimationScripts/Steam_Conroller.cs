@@ -7,7 +7,7 @@ public class Steam_Conroller : MonoBehaviour {
 	// Use this for initialization
 	void Awake() {
         outerFrameAnimator = GameObject.Find("Outer_Frame_Water").GetComponent<Animator>();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,4 +20,8 @@ public class Steam_Conroller : MonoBehaviour {
             GameObject.Find("Steam").GetComponent<ParticleSystem>().Stop();
         }
 	}
+    void removingWaterAnimEnded()
+    {
+        outerFrameAnimator.SetBool("isWater", false);
+    }
 }

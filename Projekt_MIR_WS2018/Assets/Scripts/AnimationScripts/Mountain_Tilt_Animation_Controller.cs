@@ -20,7 +20,6 @@ public class Mountain_Tilt_Animation_Controller : MonoBehaviour {
         }
         else if (this.transform.rotation.y >= edgeRotation && this.transform.rotation.y < maxRotation)
         {
-         
             humanAnimator.SetBool("walkDown", true);
         }
     }   

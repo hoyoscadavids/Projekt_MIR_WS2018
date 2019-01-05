@@ -10,7 +10,6 @@ TagManager:
   - Plug
   - Island
   - Mountains
-  - Mountain_Tilt
   layers:
   - Default
   - TransparentFX

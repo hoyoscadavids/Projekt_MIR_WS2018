@@ -18,7 +18,7 @@ public class Island_Animation_Script : MonoBehaviour {
         outerFrameAnimator = GameObject.Find("Outer_Frame_Water").GetComponent<Animator>();
         constraints = this.GetComponent<BoxCollider2D>();
         waterParticlesOutCounter = 0;
-        maxNumberOfWaterParticles = 150;
+        maxNumberOfWaterParticles = 200;
         dyingIslandAnimationTriggered = false;
         waterParent = GameObject.Find("Water");
 	}

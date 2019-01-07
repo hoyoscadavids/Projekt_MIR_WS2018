@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="wolke2" size="0.070000 0.037491" />
     <ImageTarget name="Sonne1" size="0.070000 0.070000" />
     <ImageTarget name="wolke" size="0.070000 0.037491" />
     <ImageTarget name="Plug" size="0.050000 0.050075" />

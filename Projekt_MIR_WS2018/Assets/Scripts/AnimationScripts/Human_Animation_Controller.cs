@@ -2,16 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Human_Animation_Controller : MonoBehaviour {
     private GameObject front, side, head;
-
+    private System.Random ran;
     private void Awake()
     {
         front = GameObject.Find("Human_Front_Pivot");
         side = GameObject.Find("Human_Side_Pivot");
         head = GameObject.Find("Kopf_Complete");
+        ran = new System.Random();
         side.SetActive(false);
+        InvokeRepeating("sayHello", 3.0f, 1f);
     }
+ 
+    void sayHello()
+    {
+        int randomNumber = ran.Next(0, 100);
+        
+        if(randomNumber <= 20)
+        {
+            gameObject.GetComponent<Animator>().SetBool("sayHello", true);
+        }
+    }
+    void sayHelloAnimationEnded()
+    {
+        Debug.Log("Hi");
+        gameObject.GetComponent<Animator>().SetBool("sayHello", false);
+    }
+
     void walkUpAnimationEnded()
     {
         gameObject.GetComponent<Animator>().SetBool("walkUp", false);
@@ -44,5 +63,9 @@ public class Human_Animation_Controller : MonoBehaviour {
         head.SetActive(true);
         gameObject.GetComponent<Animator>().SetBool("walkBackFromBalloon", false);
         gameObject.GetComponent<Animator>().SetBool("isRidingBalloon", true);
+    }
+    void playSound() {
+        gameObject.GetComponent<AudioSource>().Stop();
+        gameObject.GetComponent<AudioSource>().Play();
     }
 }

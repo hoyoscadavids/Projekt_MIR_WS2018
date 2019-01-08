@@ -6,11 +6,13 @@ public class Mountains_Animation_Script : MonoBehaviour
 {
 
     private ParticleSystem snow, mist;
+    private Animator humanAnimator;
     // Use this for initialization
     void Awake()
     {
         snow = GameObject.Find("Snow").GetComponent<ParticleSystem>();
         mist = GameObject.Find("Mist").GetComponent<ParticleSystem>();
+        humanAnimator = GameObject.Find("Human").GetComponent<Animator>();
 
     }
 
@@ -18,6 +20,7 @@ public class Mountains_Animation_Script : MonoBehaviour
     {
         if (other.CompareTag("Plug"))
         {
+            humanAnimator.SetBool("isPlug", true);
             snow.Stop();
             mist.Stop();
         }
@@ -27,6 +30,7 @@ public class Mountains_Animation_Script : MonoBehaviour
     {
         if (other.CompareTag("Plug"))
         {
+            humanAnimator.SetBool("isPlug", false);
             snow.Play();
             mist.Play();
         }

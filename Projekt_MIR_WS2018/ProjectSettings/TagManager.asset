@@ -11,6 +11,8 @@ TagManager:
   - Island
   - Mountains
   - Pfahl
+  - IslandHole
+  - Sun
   layers:
   - Default
   - TransparentFX

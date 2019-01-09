@@ -11,6 +11,7 @@ public class Steam_Conroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (outerFrameAnimator.GetBool("isSun")) { outerFrameAnimator.SetBool("isWater", false); }
 		if(outerFrameAnimator.GetBool("isSun") && outerFrameAnimator.GetBool("isWater"))
         {
             GameObject.Find("Steam").GetComponent<ParticleSystem>().Play();

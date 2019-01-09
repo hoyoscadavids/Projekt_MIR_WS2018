@@ -39,9 +39,8 @@ public class Island_Animation_Script : MonoBehaviour {
         if (other.gameObject.CompareTag("Water"))
             waterParticlesOutCounter++;
         {
-            if (waterParticlesOutCounter >= (maxNumberOfWaterParticles - maxNumberOfWaterParticles/3) /*&& !dyingIslandAnimationTriggered*/)
-            {
-               // dyingIslandAnimationTriggered = true;
+            if (waterParticlesOutCounter >= (maxNumberOfWaterParticles - maxNumberOfWaterParticles/3) && other.gameObject.CompareTag("Water"))
+            {               
                 islandAnimator.SetBool("noWater", true);
                 outerFrameAnimator.SetBool("isWater", true);
             }

@@ -3984,15 +3984,15 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.9
-    functionName: walkDownAnimationEnded
+  - time: 2.5833333
+    functionName: changeToFront
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 2.9
-    functionName: changeToFront
+    functionName: walkDownAnimationEnded
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

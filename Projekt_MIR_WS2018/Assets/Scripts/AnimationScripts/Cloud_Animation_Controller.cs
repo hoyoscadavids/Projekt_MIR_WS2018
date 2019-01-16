@@ -5,10 +5,12 @@ using Vuforia;
 
 public class Cloud_Animation_Controller : MonoBehaviour {
     private Animator outerFrameAnimator, humanAnimator;
+    private int collisions, timeOutCollisions;
     // Use this for initialization
     void Awake () {
         outerFrameAnimator = GameObject.Find("Outer_Frame_Water").GetComponent<Animator>();
         humanAnimator = GameObject.Find("Human").GetComponent<Animator>();
+        collisions = 0;
     }
 
     private void Update()
@@ -16,17 +18,28 @@ public class Cloud_Animation_Controller : MonoBehaviour {
         if (isTrackingMarker("Marker_Three_Cloud"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
+            if (collisions == 0)
+            {
+                timeOutCollisions++;
+                if(timeOutCollisions >= 60)
+                {
+                    outerFrameAnimator.SetBool("isWater", true);
+                }
+            }
+            else { timeOutCollisions = 0; }
         }
         else
         {
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;   
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
+        
         if (other.gameObject.CompareTag("Island") || other.gameObject.CompareTag("Mountains"))
         {
-            outerFrameAnimator.SetBool("isWater", true);
+            //outerFrameAnimator.SetBool("isWater", true);
+            collisions--;
         }
         if (other.gameObject.CompareTag("Mountains"))
         {
@@ -36,6 +49,7 @@ public class Cloud_Animation_Controller : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        collisions++;
         if (other.gameObject.CompareTag("Mountains"))
         {
             humanAnimator.SetBool("isCloud", true);

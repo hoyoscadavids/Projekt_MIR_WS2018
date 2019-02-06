@@ -15,18 +15,14 @@ public class Mountain_Tilt_Animation_Controller : MonoBehaviour {
         maxRotation = 0.5f;
 	}
 	
-	// Update is called once per frame
+	// Activate the "walking up/down the mountain" animation, taking into account the min and max rotation
+    // when tilting the frame
 	void Update () {
         if (this.transform.rotation.y <= -edgeRotation && this.transform.rotation.y > -maxRotation)
         {
             humanAnimator.SetBool("walkUp", true);
             humanAnimator.SetBool("walkDown", false);
         }
-        /*  else if (this.transform.rotation.y >= edgeRotation && this.transform.rotation.y < maxRotation)
-          {
-              humanAnimator.SetBool("walkDown", true);
-              humanAnimator.SetBool("walkUp", false);
-          }*/
         else
         {
             humanAnimator.SetBool("walkUp", false);

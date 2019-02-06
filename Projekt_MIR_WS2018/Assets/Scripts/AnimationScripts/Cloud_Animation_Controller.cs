@@ -15,6 +15,7 @@ public class Cloud_Animation_Controller : MonoBehaviour {
 
     private void Update()
     {
+        // Cloud is detected as outside the frames after 1 second.
         if (isTrackingMarker("Marker_Three_Cloud"))
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = true;
@@ -35,10 +36,9 @@ public class Cloud_Animation_Controller : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        
+        // Set the amount of collisions for the code in update.
         if (other.gameObject.CompareTag("Island") || other.gameObject.CompareTag("Mountains"))
         {
-            //outerFrameAnimator.SetBool("isWater", true);
             collisions--;
         }
         if (other.gameObject.CompareTag("Mountains"))
@@ -49,6 +49,7 @@ public class Cloud_Animation_Controller : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Set the amount of collisions for the code in update.
         collisions++;
         if (other.gameObject.CompareTag("Mountains"))
         {

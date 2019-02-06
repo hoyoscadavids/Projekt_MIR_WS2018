@@ -9,7 +9,7 @@ public class Steam_Conroller : MonoBehaviour {
         outerFrameAnimator = GameObject.Find("Outer_Frame_Water").GetComponent<Animator>();
     }
 	
-	// Update is called once per frame
+	// Activate steam when water is being evaporated
 	void Update () {
         if (outerFrameAnimator.GetBool("isSun")) { outerFrameAnimator.SetBool("isWater", false); }
 		if(outerFrameAnimator.GetBool("isSun") && outerFrameAnimator.GetBool("isWater"))

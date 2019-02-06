@@ -27,9 +27,10 @@ public class Island_Animation_Script : MonoBehaviour {
         waterParticlesInCounter = maxNumberOfWaterParticles;
 	}
    
+
     private void FixedUpdate()
     {
-        Debug.Log(waterParticlesOutCounter);
+        // When the cloud is in the frame, and the frame doesn't have the normal amount o water, fill it with water.
         if(noWater && islandAnimator.GetBool("isCloud") && waterParticlesInCounter < maxNumberOfWaterParticles){
             GameObject waterDrop = Instantiate(waterPrefab, waterParent.transform);
             waterDrop.transform.position = GameObject.Find("Marker_Three_Cloud").transform.position;
@@ -48,6 +49,7 @@ public class Island_Animation_Script : MonoBehaviour {
 
     private void Update()
     {
+        // Deactivate water when not being tracked
         if (!isTrackingMarker("First_Marker"))
         {
             for (int i = 0; i < waterParent.transform.childCount; i++)
@@ -62,18 +64,21 @@ public class Island_Animation_Script : MonoBehaviour {
                 waterParent.transform.GetChild(i).gameObject.SetActive(true);
             }
         }
+        // Reset number of out particles when they are disposed of.
         if(waterParticlesOutCounter >= maxNumberOfWaterParticles)
         {
             waterParticlesOutCounter = 0;
         }
     }
-    private void OnTriggerExit2D(Collider2D other){  
+    private void OnTriggerExit2D(Collider2D other){
+        // Detect water leaving the frame
         if (other.gameObject.CompareTag("Water"))
             waterParticlesOutCounter++;
             waterParticlesInCounter--;
         {
             if (waterParticlesOutCounter >= (maxNumberOfWaterParticles - maxNumberOfWaterParticles/3) && other.gameObject.CompareTag("Water"))
             {
+                // If enough water leaves trigger the plants dying animation
                 islandAnimator.SetBool("noWater", true);
                 outerFrameAnimator.SetBool("isWater", true);
                 noWater = true;

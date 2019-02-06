@@ -9,6 +9,5 @@ public class Water_Camera_Controller : MonoBehaviour {
         this.transform.eulerAngles = new Vector3(GameObject.Find("First_Marker").transform.rotation.eulerAngles.x/4,
             GameObject.Find("First_Marker").transform.rotation.eulerAngles.y/4, 
             this.transform.eulerAngles.z) ;
-        //this.transform.Rotate(new Vector3(90f, 0f, 0f));
 	}
 }

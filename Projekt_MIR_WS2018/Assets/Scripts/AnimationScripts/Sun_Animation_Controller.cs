@@ -12,7 +12,9 @@ public class Sun_Animation_Controller : MonoBehaviour {
         outerFrameAnimator = GameObject.Find("Outer_Frame_Water").GetComponent<Animator>();
     }
     private void Update()
-    {
+    {   
+        // Deactivate sun if not being tracked.
+        // If sun is not colliding with anything after half a second, sun is detected as outside the frames
         if (isTrackingMarker("Target_Six_Sun")) {
             gameObject.GetComponent<CircleCollider2D>().enabled = true;
             gameObject.GetComponentInChildren<Light>().enabled = true;
@@ -38,6 +40,7 @@ public class Sun_Animation_Controller : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        // If sun leaves Island/ Mountain frame
         collisions--;
         if (other.gameObject.CompareTag("Island") || other.gameObject.CompareTag("Mountains"))
         {
@@ -46,13 +49,14 @@ public class Sun_Animation_Controller : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // If sun enters Island/ Mountain frame
         collisions++;
         if (other.gameObject.CompareTag("Island") || other.gameObject.CompareTag("Mountains"))
         {
             outerFrameAnimator.SetBool("isSun", false);
         }
     }
-
+    // Is being tracked function (For fixing some Vuforia issues)
     private bool isTrackingMarker(string imageTargetName)
     {
         var imageTarget = GameObject.Find(imageTargetName);

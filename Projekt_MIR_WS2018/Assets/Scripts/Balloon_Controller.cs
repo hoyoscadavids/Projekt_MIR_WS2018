@@ -3,13 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Balloon_Controller : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
+// Start the game activated (To fix some vuforia bugs)
 	void Update () {
         this.GetComponent<SpriteRenderer>().enabled = true;
 	}

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Balloon_Animation_Controller : MonoBehaviour {
     private GameObject pfahl, head, side, front;
     private Animator humanAnimator;
-    private bool headBool;
 	// Use this for initialization
 	void Awake () {
         head = GameObject.Find("Kopf_Complete");
@@ -14,15 +13,10 @@ public class Balloon_Animation_Controller : MonoBehaviour {
         front = GameObject.Find("Human_Front_Pivot");
         humanAnimator = GameObject.Find("Human").GetComponent<Animator>();
         head.SetActive(false);
-        headBool = false;
 	}
-
-    private void Update()
-    {
-       // headBool = humanAnimator.GetBool("isRidingBalloon");
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // If human is on land, and balloon has also landed: Let her ride the balloon
         if (collision.gameObject.CompareTag("Pfahl") && !humanAnimator.GetBool("isRidingBalloon"))
         {
             humanAnimator.SetBool("walkToBalloon", true);
@@ -36,6 +30,7 @@ public class Balloon_Animation_Controller : MonoBehaviour {
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        // Walk back when returning
         if (collision.gameObject.CompareTag("Pfahl") && !humanAnimator.GetBool("isRidingBalloon")) {
             humanAnimator.SetBool("walkToBalloon", false);
             humanAnimator.SetBool("walkBackFromBalloon", true);

@@ -18,6 +18,7 @@ public class Human_Animation_Controller : MonoBehaviour {
  
     void sayHello()
     {
+        // State random intervals for the human to say hello, when she is not freezing
         int randomNumber = ran.Next(0, 100);
         
         if(randomNumber <= 20)
@@ -25,9 +26,10 @@ public class Human_Animation_Controller : MonoBehaviour {
             gameObject.GetComponent<Animator>().SetBool("sayHello", true);
         }
     }
+
+    // All the next functions are used in the animator controller
     void sayHelloAnimationEnded()
     {
-        Debug.Log("Hi");
         gameObject.GetComponent<Animator>().SetBool("sayHello", false);
     }
 
@@ -39,6 +41,8 @@ public class Human_Animation_Controller : MonoBehaviour {
     {
         gameObject.GetComponent<Animator>().SetBool("walkDown", false);
     }
+
+    // Changes between the side or front sprite
     void changeToFront() {
         front.SetActive(true);
         side.SetActive(false);
@@ -56,7 +60,7 @@ public class Human_Animation_Controller : MonoBehaviour {
         Debug.Log("hi");
         gameObject.GetComponent<Animator>().SetBool("walkBackFromBalloon", false);
     }
-
+    // Lets the program know the human is currentently flying inside the hot air balloon
     void rideBalloon() {
         front.SetActive(false);
         side.SetActive(false);

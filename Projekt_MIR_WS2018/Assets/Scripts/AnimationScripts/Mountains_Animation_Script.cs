@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Mountains_Animation_Script : MonoBehaviour
 {
-
     private ParticleSystem snow, mist;
     private Animator humanAnimator;
     // Use this for initialization
@@ -16,6 +15,7 @@ public class Mountains_Animation_Script : MonoBehaviour
 
     }
 
+    // Activate snow and mist when no Plug is colliding with the whole in the mountain.
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Plug"))
